@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulir Nota Pembelian</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama Pembeli</label>
+                <input type="text" id="nama" name="nama" placeholder="ketikan namamu disini"> 
+            </div>
+
+            <div class="form-group"> 
+                <label for="Alamat">Alamat Pembeli</label>
+                <input type="text" id="Alamat" name="Alamat" placeholder="ketikan alamatmu">
+            </div>
+            
+            <div class="form-group"> 
+                <label for="kode_pos">Kode Pos</label>
+                <input type="number" id="kode_pos" name="kode_pos" placeholder="masukan kode pos alamatmu"> 
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal">Tanggal Beli</label>
+                <input type="date" id="tanggal" name="tanggal"> 
+            </div>
+                
+            <div class="form-group">
+                <label>Pembayaran</label> 
+                <div class="pembayaran-group">
+                    <input type="radio" name="metode_bayar" value="Lunas" id="lunas">
+                    <label for="lunas">Lunas</label>
+                    <input type="radio" name="metode_bayar" value="Belum Bayar" id="belum_bayar">
+                    <label for="belum_bayar">Belum Bayar</label>
+                    <input type="radio" name="metode_bayar" value="DP" id="dp">
+                    <label for="dp">DP</label>
+                    <input type="number" name="Uang_DP" id="Uang_DP" placeholder="ketikan angka uang DP"> 
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="jenis_pembayaran">Jenis Pembayaran</label>
+                <select name="Jenis Pembayaran" id="jenis_pembayaran">
+                    <option value="Cash">Debit</option>
+                    <option value="Kredit">Kredit</option> 
+                    <option value="Debit">Cash</option>
+                </select>
+            </div>
+            
+            <p class="menu-title">Menu</p>
+            
+            <div class="menu-container">
+                <div class="menu-item">
+                    <input type="checkbox" id="nasi_goreng" name="pesanan">
+                    <label for="nasi_goreng">Nasi Padang</label>
+                    <input type="number" placeholder="Jumlah" name="makanan_nasi" id="makanan_nasi">
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="mie_goreng" name="pesanan">
+                    <label for="mie_goreng">Bakmi Jawa</label>
+                    <input type="number" placeholder="Jumlah" name="makanan_mie" id="makanan_mie">
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="rendang" name="pesanan">
+                    <label for="rendang">Rawon</label>
+                    <input type="number" placeholder="Jumlah" name="makanan_rawon" id="makanan_rawon">
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="es_teh" name="pesanan">
+                    <label for="es_teh">Es Teh</label>
+                    <input type="number" placeholder="Jumlah" name="minuman_es" id="minuman_es">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" onclick="this.form.reset()">Clear</button>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Impian.png);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.form-container {
+    background-color: #6c84a0;
+    padding: 70px 70px; 
+    border-radius: 50px;
+    width: 70%; 
+    color: #fff;
+    text-align: justify;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+    border: 2px dashed white;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed white; 
+    padding-bottom: 8px; 
+    display: inline-block; 
+    width: 100%;
+}
+
+.form-container p.menu-title {
+    font-size: 18px; 
+    margin: 20px 0 10px; 
+    text-align: left; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.menu-item {
+    display: flex;
+    align-items: left; 
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+
+.menu-item input[type="number"] {
+    width: 85%;
+}
+
+.pembayaran-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pembayaran-group label {
+    margin-right: 5px; 
+}
+
+.pembayaran-group input[type="radio"] {
+    margin-right: 5px; 
+}
+
+.button-container {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    margin-top: 15px;
+}
+
+button {
+    display: flex;           
+    align-items: center; 
+    height: 30px;
+    width: 100px;
+    margin: 0 10px;        
+    border-radius: 5px;   
+    cursor: pointer;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: #3f658d;
+}
+
+@media (max-width: 500px) {
+.container {
+    width: 50vh;
+    margin: auto;
+}
+}
